@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.querySelector('body');
      const navToggle = document.querySelector('.nav-toggle');
     const mainNav = document.querySelector('.main-nav');
-      navToggle.addEventListener('click', () => {
-        mainNav.classList.toggle('active');
-        });
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
 
     themeToggle.addEventListener('click', function() {
         body.classList.toggle('light-theme');
