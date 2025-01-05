@@ -147,13 +147,48 @@ section p, li{
     color: #999;
     margin-top: 0.5rem;
 }
+ .education-images {
+        display: flex;
+        justify-content: space-around;
+         margin-top: 1rem;
+       margin-bottom: 1rem;
+        align-items: center;
+    }
 
+     .education-images img {
+         width: 100px;
+         height: 100px;
+        object-fit: cover; /* Pour éviter la déformation de l'image */
+       border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+         transition: transform 0.3s ease;
+     }
+       .education-images img:hover {
+       transform: scale(1.05);
+    }
 footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #282828;
 }
-
+/* Style for the profile image */
+  .profile-image {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Pour un cercle */
+        object-fit: cover; /* Pour éviter la déformation de l'image */
+         border: 2px solid #569cd6;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+         margin-bottom: 10px;
+         transition: transform 0.3s ease;
+    }
+     .profile-image img:hover {
+       transform: scale(1.05);
+    }
 /* Animations */
 
 .contact-item, .experience-item, .education-item {
