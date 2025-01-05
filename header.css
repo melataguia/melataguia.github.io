@@ -31,7 +31,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+   display: flex;
 
 }
 .main-nav ul li {
@@ -111,40 +111,39 @@ body.light-theme .main-nav ul li a {
 }
 /* Styles for the menu when is opened*/
 .main-nav.active ul {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-   top: 100%;
-   left: 0;
-  width: 100%;
-   background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #282828;
     border-top: 1px solid #333;
     padding-bottom: 10px;
-}
-
-.main-nav.active ul li {
-  margin-left: 0;
-    text-align: center;
+  }
+  .main-nav.active ul li {
+    margin-left: 0;
+      text-align: center;
       margin-top: 10px;
 }
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {
-        flex-direction: row;
-           justify-content: space-between;
-            padding: 0 10px;
-        }
-    .nav-toggle {
-      display: block;
+         flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
     }
-   .main-nav ul {
-         display: none;
-      }
-  #theme-toggle{
+      .main-nav ul {
+        display: none;
+    }
+   .nav-toggle {
+      display: block;
+       }
+   #theme-toggle{
         margin-top: 0;
-       margin-right: 10px;
-  }
+         margin-right: 10px;
+    }
   .main-nav.active ul {
-     display: flex;
+      display: flex;
   }
 }
