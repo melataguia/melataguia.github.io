@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const body = document.getElementById('theme-body');
+      const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = 'header.css';
+         document.head.appendChild(link);
+
     fetch('header.html')
         .then(response => {
             if (!response.ok) {
