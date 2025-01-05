@@ -31,6 +31,20 @@ header h1 {
      font-size: 1.2rem;
      font-weight: normal;
 }
+#theme-toggle {
+    background-color: #569cd6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #417ab3;
+}
 
 main {
     padding: 2rem;
@@ -149,6 +163,34 @@ footer {
 .contact-item:hover, .experience-item:hover, .education-item:hover {
   transform: translateY(-3px);
 }
+
+/* Thème clair */
+#theme-body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+#theme-body.light-theme a {
+    color: #007bff;
+}
+#theme-body.light-theme a:hover {
+     color: #0056b3;
+}
+#theme-body.light-theme header {
+    background-color: #e9ecef;
+}
+#theme-body.light-theme section {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+#theme-body.light-theme section h2{
+  color: #007bff;
+  border-bottom: 1px solid #ddd;
+}
+#theme-body.light-theme footer {
+    background-color: #e9ecef;
+}
+
+
 @media (max-width: 768px) {
     main {
         padding: 1rem;
