@@ -1,12 +1,16 @@
+/* Général */
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    margin: 0;
+     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
+        color: #d4d4d4;
 
+}
+ #theme-body{
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+ }
 a {
     color: #569cd6;
     text-decoration: none;
@@ -214,11 +218,9 @@ footer {
     background-color: #f0f0f0;
     color: #333;
 }
-
 #theme-body.light-theme a {
     color: #007bff;
 }
-
 #theme-body.light-theme a:hover {
     color: #0056b3;
 }
