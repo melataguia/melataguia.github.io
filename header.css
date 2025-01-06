@@ -1,34 +1,39 @@
-/* Général */
+/* ======= Styles généraux ======= */
 body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header styles */
+/* ======= Styles du header ======= */
 .header .navbar {
     background-color: #282828;
+    transition: background-color 0.3s ease;
 }
 
 .header .navbar-dark .navbar-brand {
     color: #d4d4d4;
+    transition: color 0.3s ease;
 }
 
 .header .navbar-dark .navbar-nav .nav-link {
     color: #d4d4d4;
+    transition: color 0.3s ease;
 }
 
 .header .navbar-dark .navbar-nav .nav-link:hover {
-     color: #569cd6;
+    color: #569cd6;
 }
 
+/* ======= Thème clair ======= */
 body.light-theme .header .navbar {
     background-color: #e9ecef;
 }
 
 body.light-theme .header .navbar-dark .navbar-brand {
-     color: #333;
+    color: #333;
 }
 
 body.light-theme .header .navbar-dark .navbar-nav .nav-link {
@@ -39,14 +44,17 @@ body.light-theme .header .navbar-dark .navbar-nav .nav-link:hover {
     color: #007bff;
 }
 
-body.light-theme .header .navbar-toggler-icon{
-     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.header .navbar-toggler-icon{
-     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+/* Icônes du toggler dans les deux thèmes */
+.header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: background-image 0.3s ease;
 }
 
-/* Styles pour le bouton theme-toggle */
+body.light-theme .header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ======= Styles pour le bouton theme-toggle ======= */
 #theme-toggle {
     background-color: #569cd6;
     color: #fff;
@@ -54,9 +62,13 @@ body.light-theme .header .navbar-toggler-icon{
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 #theme-toggle:hover {
     background-color: #417ab3;
+    transform: scale(1.05);
 }
+
+/* ======= Autres styles ======= */
+/* Ajoutez ici tout autre style personnalisé */
