@@ -1,19 +1,22 @@
-/* Général */
+/* ======= Général ======= */
 body {
     font-family: 'Roboto Mono', monospace;
-     margin: 0;
+    margin: 0;
     padding: 0;
     line-height: 1.6;
-        color: #d4d4d4;
-
+    color: #d4d4d4;
 }
- #theme-body{
+
+#theme-body {
     background-color: #1e1e1e;
     color: #d4d4d4;
- }
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 a {
     color: #569cd6;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -32,6 +35,11 @@ section {
     background-color: #252525;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
 }
 
 section h2 {
@@ -47,6 +55,7 @@ li {
     margin-bottom: 10px;
 }
 
+/* ======= Contact Info ======= */
 .contact-info {
     display: flex;
     align-items: center;
@@ -59,12 +68,19 @@ li {
     margin-bottom: 5px;
     margin-right: 15px;
     display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
 }
 
 .contact-item .icon {
     margin-right: 5px;
 }
 
+/* ======= Listes ======= */
 .interests ul,
 .languages ul {
     list-style: none;
@@ -82,53 +98,41 @@ li {
     margin-right: 10px;
 }
 
+/* ======= Certifications ======= */
 .certification-item {
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateY(-3px);
 }
 
 .certification-item .certification-content {
     margin-left: 10px;
 }
 
+/* ======= Profils ======= */
 .profiles {
     text-align: center;
 }
 
-.experience-item h3 {
-    margin-bottom: 0.5rem;
-    color: #569cd6;
-}
-
-.experience-item .sub-title {
-    margin-bottom: 0.5rem;
-    font-weight: normal;
-    font-style: italic;
-}
-
-.experience-item .date {
-    font-size: 0.9rem;
-    color: #999;
-    margin-top: 0.5rem;
-}
-
-.experience-item ul {
-    margin-left: 20px;
-    list-style-type: square;
-    padding-left: 1.2em;
-}
-
+/* ======= Expérience et Éducation ======= */
+.experience-item h3,
 .education-item h3 {
     margin-bottom: 0.5rem;
     color: #569cd6;
 }
 
+.experience-item .sub-title,
 .education-item .sub-title {
     margin-bottom: 0.5rem;
     font-weight: normal;
     font-style: italic;
 }
 
+.experience-item .date,
 .education-item .date {
     font-size: 0.9rem;
     color: #999;
@@ -138,8 +142,7 @@ li {
 .education-images {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     align-items: center;
 }
 
@@ -147,7 +150,6 @@ li {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    /* Pour éviter la déformation de l'image */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -157,20 +159,20 @@ li {
     transform: scale(1.05);
 }
 
+/* ======= Footer ======= */
 footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #282828;
 }
 
-/* Style for the profile image */
+/* ======= Image de Profil ======= */
 .profile-image {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
     max-width: 800px;
-    /* Ajustez la largeur maximale */
     margin-left: auto;
     margin-right: auto;
 }
@@ -200,27 +202,16 @@ footer {
     margin: 0;
 }
 
-/* Animations */
-.contact-item,
-.experience-item,
-.education-item {
-    transition: transform 0.3s ease;
-}
-
-.contact-item:hover,
-.experience-item:hover,
-.education-item:hover {
-    transform: translateY(-3px);
-}
-
-/* Thème clair */
+/* ======= Thème Clair ======= */
 #theme-body.light-theme {
     background-color: #f0f0f0;
     color: #333;
 }
+
 #theme-body.light-theme a {
     color: #007bff;
 }
+
 #theme-body.light-theme a:hover {
     color: #0056b3;
 }
@@ -243,6 +234,7 @@ footer {
     background-color: #e9ecef;
 }
 
+/* ======= Responsive ======= */
 @media (max-width: 768px) {
     main {
         padding: 1rem;
@@ -270,10 +262,10 @@ footer {
 
     .profile-image .profile-name {
         text-align: center;
-        /* Aligner le nom à droite */
         margin-left: 0px;
     }
+
     .profile-image img {
-       margin-right: 0;
+        margin-right: 0;
     }
 }
