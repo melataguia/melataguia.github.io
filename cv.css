@@ -4,23 +4,23 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #d4d4d4; /* Couleur par défaut pour le thème sombre */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #d4d4d4;
 }
 
 #theme-body {
-    background-color: #1e1e1e; /* Couleur de fond par défaut pour le thème sombre */
+    background-color: #1e1e1e;
+    color: #d4d4d4;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
-    color: #569cd6; /* Couleur des liens pour le thème sombre */
+    color: #569cd6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #b3d4fc; /* Couleur des liens au survol */
+    color: #b3d4fc;
 }
 
 main {
@@ -32,7 +32,7 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: #252525; /* Couleur de fond des sections pour le thème sombre */
+    background-color: #252525;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -43,7 +43,7 @@ section:hover {
 }
 
 section h2 {
-    color: #569cd6; /* Couleur des titres pour le thème sombre */
+    color: #569cd6;
     border-bottom: 1px solid #333;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
@@ -94,7 +94,7 @@ li {
 
 .languages li span {
     font-weight: bold;
-    color: #569cd6; /* Couleur pour les spans dans les listes */
+    color: #569cd6;
     margin-right: 10px;
 }
 
@@ -122,7 +122,7 @@ li {
 .experience-item h3,
 .education-item h3 {
     margin-bottom: 0.5rem;
-    color: #569cd6; /* Couleur des sous-titres pour le thème sombre */
+    color: #569cd6;
 }
 
 .experience-item .sub-title,
@@ -163,7 +163,7 @@ li {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #282828; /* Couleur de fond du footer pour le thème sombre */
+    background-color: #282828;
 }
 
 /* ======= Image de Profil ======= */
@@ -182,7 +182,7 @@ footer {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #569cd6; /* Bordure de l'image de profil pour le thème sombre */
+    border: 2px solid #569cd6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     transition: transform 0.3s ease;
@@ -204,8 +204,8 @@ footer {
 
 /* ======= Thème Clair ======= */
 #theme-body.light-theme {
-     background-color: #f0f0f0;
-     color: #333;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 #theme-body.light-theme a {
@@ -215,9 +215,14 @@ footer {
 #theme-body.light-theme a:hover {
     color: #0056b3;
 }
-#theme-body.light-theme  section {
-     background-color: #fff;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+#theme-body.light-theme header {
+    background-color: #e9ecef;
+}
+
+#theme-body.light-theme section {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 #theme-body.light-theme section h2 {
@@ -228,6 +233,7 @@ footer {
 #theme-body.light-theme footer {
     background-color: #e9ecef;
 }
+
 /* ======= Responsive ======= */
 @media (max-width: 768px) {
     main {
